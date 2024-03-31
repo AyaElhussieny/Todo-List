@@ -1,0 +1,11 @@
+i{
+    color: white;
+    font-size: 1rem;
+}
+
+.theme{
+    background-color: rgb(2, 148, 158);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}

@@ -1,0 +1,18 @@
+
+<div class="container pt-5 d-flex justify-content-center" >
+    <div [style]=" isLightTheme ==true ? lightTheme : darkTheme" class="card position-relative col-md-6 col-m-8 col-ms-10 col-xs-12 py-5 flex align-items-center justify-content-center border rounded-5 ">
+        <h1 class="text-center mb-5">Todo List</h1>
+        <div class="w-100 d-flex justify-content-between align-items-center">
+            <input type="text" [style]=" isLightTheme ==true ? lightTheme : darkTheme" [(ngModel)]="searchKey" class="form-control mx-auto w-75 m-5 " placeholder="search ...">
+            <app-theme-btn class="me-4" (click)="toggelTheme()"></app-theme-btn>
+        </div>
+        <div class="taskList col-md-8">
+            <div *ngFor="let task of allTasks | search : searchKey" class="item field-checkbox d-flex justify-content-between align-items-center mb-3">
+                <app-task-item [task] = "task"></app-task-item>
+                <app-delete-task-btn (click) = "deleteTask(task.id)" ></app-delete-task-btn>   
+            
+            </div>
+        </div>
+        <app-add-task-btn (click) ="addTask()"></app-add-task-btn>
+        </div>
+</div>

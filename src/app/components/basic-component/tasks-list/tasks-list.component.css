@@ -1,0 +1,45 @@
+
+:host ::ng-deep
+.p-checkbox-box{
+    border-radius: 50%;
+    
+}
+.item{
+    border-radius: 10px;
+    box-shadow: 0.1px 0.1px 6px #c7c6c6;
+    width: 100%;
+    padding: 1rem;
+    transition: 0.5s;
+}
+.item:hover {
+
+/* color: rgb(47, 170, 179); */
+transform: scale(1.1);
+background-color: rgb(110, 195, 201);
+}
+
+.card{
+    box-shadow: 0.2px 0.2px 3px #c7c6c6;
+}
+.task {
+    font-size: 1.2rem;
+    font-family: "Besley", serif;
+
+}
+
+h1{
+    font-family: "Besley", serif;
+}
+
+
+.darkTheme{
+    background-color: black;
+    color:teal;
+}
+
+.lightTheme{
+    .darkTheme{
+        background-color: white;
+        color:black ;
+    }
+}
